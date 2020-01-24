@@ -1,0 +1,15 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "DOM manipulation, almost all the content will be generated with  js\u001b[C",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Gabriela Cruz",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
