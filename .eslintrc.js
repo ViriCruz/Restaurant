@@ -13,6 +13,7 @@ module.exports = {
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "linebreak-style": ["error", "windows"]
   }
 }
