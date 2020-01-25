@@ -4,7 +4,8 @@
   "description": "DOM manipulation, almost all the content will be generated with  js\u001b[C",
   "main": "index.html",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "Gabriela Cruz",
   "license": "MIT",
