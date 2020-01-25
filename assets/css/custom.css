@@ -65,3 +65,20 @@ p {
 #content h1, #content p {
   padding: 20px 0;
 }
+
+#content header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+}
+
+.nav-tab {
+  margin: 0 50px;
+}
+
+.nav-tab a {
+  text-decoration: none;
+}
