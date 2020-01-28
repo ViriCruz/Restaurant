@@ -4,4 +4,4 @@ linters:
 
 files:
   ignore:
-    - 'dist/main.js'
+    - './dist/main.js'
