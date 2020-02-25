@@ -9,8 +9,8 @@ const menu = () => {
   img.src = '../dist/assets/images/maki-sushi.jpg';
   img.alt = 'Maki sushi';
   let li = listItem('dish', 'maki-sushi', 'Maki sushi');
-  let desc = li.childNodes[0];
-  let p = document.createElement('p');
+  const desc = li.childNodes[0];
+  const p = document.createElement('p');
   p.innerHTML = 'jsahjhdjashdkjasd';
   li.appendChild(img);
   ul.appendChild(li);
