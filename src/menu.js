@@ -1,4 +1,10 @@
 import listItem from './listItem';
+import maki from '../dist/assets/images/maki-sushi.jpg';
+import norimaki from '../dist/assets/images/norimaki.jpg';
+import oshizushi from '../dist/assets/images/oshizushi.jpg';
+import temaki from '../dist/assets/images/temaki.jpg';
+import uramaki from '../dist/assets/images/uramaki.jpg';
+
 
 const menu = () => {
   const div = document.createElement('div');
@@ -10,7 +16,7 @@ const menu = () => {
   const ul = document.createElement('ul');
   ul.setAttribute('class', 'dish-list');
   let img = document.createElement('img');
-  img.src = '../dist/assets/images/maki-sushi.jpg';
+  img.src = maki;
   img.alt = 'Maki sushi';
   let li = listItem('dish', 'maki-sushi', 'Maki sushi');
   li.childNodes[0].classList.add('dish-description');
@@ -19,28 +25,28 @@ const menu = () => {
   li = listItem('dish', 'norimaki-sushi', 'Norimaki sushi');
   li.childNodes[0].classList.add('dish-description');
   img = document.createElement('img');
-  img.src = '../dist/assets/images/norimaki.jpg';
+  img.src = norimaki;
   img.alt = 'Norimaki sushi';
   li.appendChild(img);
   ul.appendChild(li);
   li = listItem('dish', 'oshizushi-sushi', 'Oshizushi sushi');
   li.childNodes[0].classList.add('dish-description');
   img = document.createElement('img');
-  img.src = '../dist/assets/images/oshizushi.jpg';
+  img.src = oshizushi;
   img.alt = 'Oshizushi sushi';
   li.appendChild(img);
   ul.appendChild(li);
   li = listItem('dish', 'uramaki-sushi', 'Uramaki sushi');
   li.childNodes[0].classList.add('dish-description');
   img = document.createElement('img');
-  img.src = '../dist/assets/images/uramaki.jpg';
+  img.src = uramaki;
   img.alt = 'Uramaki sushi';
   li.appendChild(img);
   ul.appendChild(li);
   li = listItem('dish', 'temaki-sushi', 'Temaki sushi');
   li.childNodes[0].classList.add('dish-description');
   img = document.createElement('img');
-  img.src = '../dist/assets/images/temaki.jpg';
+  img.src = temaki;
   img.alt = 'Temaki sushi';
   li.appendChild(img);
   ul.appendChild(li);
