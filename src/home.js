@@ -1,17 +1,13 @@
 const home = () => {
   const div = document.createElement('div');
   div.setAttribute('id', 'main-content');
+  const container = document.createElement('div');
+  container.classList.add('best-restaurant');
   const h1 = document.createElement('h1');
-  const img = document.createElement('img');
-  const parag = document.createElement('p');
 
-  h1.innerHTML = 'The best sushi restaurant you will find ever!';
-  img.src = '../dist/assets/images/sushi.jpg';
-  parag.innerHTML = 'Want more?, check our menu here.';
-
-  div.appendChild(h1);
-  div.appendChild(img);
-  div.appendChild(parag);
+  h1.innerHTML = 'John Doe\'s sushi restaurant';
+  container.appendChild(h1);
+  div.appendChild(container);
   return div;
 };
 
