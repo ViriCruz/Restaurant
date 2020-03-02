@@ -5,8 +5,24 @@ import oshizushi from '../dist/assets/images/oshizushi.jpg';
 import temaki from '../dist/assets/images/temaki.jpg';
 import uramaki from '../dist/assets/images/uramaki.jpg';
 
-
+const addImg = (src, alt) => {
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = alt;
+  const linkName = alt.toLowerCase().split(' ').join('-');
+  const li = listItem('dish', linkName, alt);
+  li.childNodes[0].classList.add('dish-description');
+  li.append(img);
+  return li;
+};
 const menu = () => {
+  const imagesAttributes = [
+    { src: maki, alt: 'Maki sushi' },
+    { src: norimaki, alt: 'Norimaki sushi' },
+    { src: oshizushi, alt: 'Oshizushi sushi' },
+    { src: temaki, alt: 'Temaki sushi' },
+    { src: uramaki, alt: 'Uramaki sushi' },
+  ];
   const div = document.createElement('div');
   div.setAttribute('id', 'main-content');
   const menuContainer = document.createElement('div');
@@ -15,41 +31,7 @@ const menu = () => {
   h2.textContent = 'Gallery';
   const ul = document.createElement('ul');
   ul.setAttribute('class', 'dish-list');
-  let img = document.createElement('img');
-  img.src = maki;
-  img.alt = 'Maki sushi';
-  let li = listItem('dish', 'maki-sushi', 'Maki sushi');
-  li.childNodes[0].classList.add('dish-description');
-  li.appendChild(img);
-  ul.appendChild(li);
-  li = listItem('dish', 'norimaki-sushi', 'Norimaki sushi');
-  li.childNodes[0].classList.add('dish-description');
-  img = document.createElement('img');
-  img.src = norimaki;
-  img.alt = 'Norimaki sushi';
-  li.appendChild(img);
-  ul.appendChild(li);
-  li = listItem('dish', 'oshizushi-sushi', 'Oshizushi sushi');
-  li.childNodes[0].classList.add('dish-description');
-  img = document.createElement('img');
-  img.src = oshizushi;
-  img.alt = 'Oshizushi sushi';
-  li.appendChild(img);
-  ul.appendChild(li);
-  li = listItem('dish', 'uramaki-sushi', 'Uramaki sushi');
-  li.childNodes[0].classList.add('dish-description');
-  img = document.createElement('img');
-  img.src = uramaki;
-  img.alt = 'Uramaki sushi';
-  li.appendChild(img);
-  ul.appendChild(li);
-  li = listItem('dish', 'temaki-sushi', 'Temaki sushi');
-  li.childNodes[0].classList.add('dish-description');
-  img = document.createElement('img');
-  img.src = temaki;
-  img.alt = 'Temaki sushi';
-  li.appendChild(img);
-  ul.appendChild(li);
+  ul.append(...imagesAttributes.map((attr) => addImg(attr.src, attr.alt)));
   menuContainer.appendChild(h2);
   menuContainer.appendChild(ul);
   div.appendChild(menuContainer);

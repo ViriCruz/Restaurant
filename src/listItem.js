@@ -3,12 +3,11 @@ const listItem = (nameClass, linkName, linkText) => {
   li.classList.add(nameClass);
   const link = document.createElement('a');
   const div = document.createElement('div');
-
-  link.setAttribute('href', '#');
-  link.setAttribute('id', linkName);
-  link.innerHTML = linkText;
-  div.appendChild(link);
-  li.appendChild(div);
+  link.href = '#';
+  link.id = linkName;
+  link.textContent = linkText;
+  div.append(link);
+  li.append(div);
   return li;
 };
 

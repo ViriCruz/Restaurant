@@ -9,27 +9,24 @@ const content = document.getElementById('content');
 // tab switching logic
 document.getElementById('tab-home').addEventListener('click', (e) => {
   const child = document.getElementById('main-content');
-  content.removeChild(child);
+  content.replaceChild(home(), child);
   removeClassList();
-  content.appendChild(home());
   e.target.classList.add('selected');
   e.preventDefault();
 });
 
 document.getElementById('tab-menu').addEventListener('click', (e) => {
   const child = document.getElementById('main-content');
-  content.removeChild(child);
+  content.replaceChild(menu(), child);
   removeClassList();
-  content.appendChild(menu());
   e.target.classList.add('selected');
   e.preventDefault();
 });
 
 document.getElementById('tab-contact').addEventListener('click', (e) => {
   const child = document.getElementById('main-content');
-  content.removeChild(child);
+  content.replaceChild(contact(), child);
   removeClassList();
-  content.appendChild(contact());
   e.target.classList.add('selected');
   e.preventDefault();
 });

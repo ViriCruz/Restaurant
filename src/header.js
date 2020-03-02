@@ -6,15 +6,15 @@ const header = () => {
   const headerTag = document.createElement('header');
   const nav = document.createElement('nav');
   const ul = document.createElement('ul');
-  const liSelected = listItem('nav-tab', 'tab-home', 'home');
-  const container = liSelected.firstChild;
-  container.firstChild.classList.add('selected');
-  ul.appendChild(liSelected);
-  ul.appendChild(listItem('nav-tab', 'tab-menu', 'menu'));
-  ul.appendChild(listItem('nav-tab', 'tab-contact', 'contact'));
-  nav.appendChild(ul);
-  headerTag.appendChild(nav);
-  div.appendChild(headerTag);
+  ul.append(
+    listItem('nav-tab', 'tab-home', 'home'),
+    listItem('nav-tab', 'tab-menu', 'menu'),
+    listItem('nav-tab', 'tab-contact', 'contact'),
+  );
+  ul.querySelector('#tab-home').classList.add('selected');
+  nav.append(ul);
+  headerTag.append(nav);
+  div.append(headerTag);
   return div;
 };
 

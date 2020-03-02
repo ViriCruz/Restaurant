@@ -3,8 +3,7 @@ import header from './header';
 
 const init = (() => {
   const content = document.getElementById('content');
-  content.appendChild(header());
-  content.appendChild(home());
+  content.append(header(), home());
 })();
 
 export default init;

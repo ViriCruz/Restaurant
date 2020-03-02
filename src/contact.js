@@ -33,11 +33,7 @@ const contactInformation = () => {
   location.textContent = 'Carter Cres';
   const country = document.createElement('p');
   country.textContent = 'Gymea Bay NSW 2227, Australia';
-  div.appendChild(span);
-  div.appendChild(phone);
-  div.appendChild(addressLabel);
-  div.appendChild(location);
-  div.appendChild(country);
+  div.append(span, phone, addressLabel, location, country);
   return div;
 };
 
@@ -48,16 +44,12 @@ const contactForm = () => {
   contactContainer.classList.add('contact');
   const formElement = form();
   const subjectContainer = document.createElement('div');
-  subjectContainer.appendChild(label('Subject:', 'subject'));
-  subjectContainer.appendChild(input('input', 'subject'));
+  subjectContainer.append(label('Subject:', 'subject'), input('input', 'subject'));
   const bodyContainer = document.createElement('div');
-  bodyContainer.appendChild(label('Message:', 'message'));
-  bodyContainer.appendChild(input('textarea', 'message'));
-  formElement.appendChild(subjectContainer);
-  formElement.appendChild(bodyContainer);
+  bodyContainer.append(label('Message:', 'message'), input('textarea', 'message'));
+  formElement.append(subjectContainer, bodyContainer);
   formElement.appendChild(input('button', 'submit')).textContent = 'Submit';
-  contactContainer.appendChild(formElement);
-  contactContainer.appendChild(contactInformation());
+  contactContainer.append(formElement, contactInformation());
   formContainer.appendChild(contactContainer);
   return formContainer;
 };
