@@ -31,7 +31,7 @@ const menu = () => {
   h2.textContent = 'Gallery';
   const ul = document.createElement('ul');
   ul.setAttribute('class', 'dish-list');
-  ul.append(...imagesAttributes.map((attr) => addImg(attr.src, attr.alt)));
+  ul.append(...imagesAttributes.map(attr => addImg(attr.src, attr.alt)));
   menuContainer.appendChild(h2);
   menuContainer.appendChild(ul);
   div.appendChild(menuContainer);
