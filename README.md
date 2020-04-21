@@ -4,7 +4,7 @@
 > This is part of the webpack and modules section in The Odin Project’s JavaScript Curriculum. Find it at https://www.theodinproject.com/courses/javascript/lessons/restaurant-page and requirement from Microverse Program.
 
 
-## Demo down below
+## Live Demo down below
 <p align="center">
   <img src="https://media.giphy.com/media/YMw9IbVO7kEThCQvJj/giphy.gif">
 </p>
@@ -16,7 +16,6 @@
 - Node.js v13.2.0
 - webpack 4.41.5
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * Node.js installed
@@ -30,6 +29,9 @@ Windows/ Mac
 Clone project and run
 `npm install`
 
+## Running the tests
+This project doesn't count with automated tests.
+
 ## How to contribute and partipate
 Fork this repo and submit a PR for review and potential merge to main branch
 
@@ -38,4 +40,8 @@ Fork this repo and submit a PR for review and potential merge to main branch
 
 👨‍💻 **Gabriela Cruz**
 
-- Github: [@viricruz](https://github.com/viricruz)
+- Github [@viricruz](https://github.com/ViriCruz/)
+
+- email me at viridiana.cruz.olivera@gmail.com
+
+- Linkedin [@viricruz](https://www.linkedin.com/in/viricruz/)
