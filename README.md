@@ -1,7 +1,7 @@
 # Restaurant project
 
 
-> This is part of the webpack and modules section in The Odin Project’s JavaScript Curriculum. Find it at https://www.theodinproject.com/courses/javascript/lessons/restaurant-page and requirement from Microverse Program.
+> This is part of the webpack and modules section in The Odin Project’s JavaScript Curriculum. Find it at https://www.theodinproject.com/courses/javascript/lessons/restaurant-page for more details.
 
 
 ## Live Demo down below
@@ -26,14 +26,14 @@ Windows/ Mac
 
 
 ### Install
-Clone project and run
+Clone project and run:
 `npm install`
 
 ## Running the tests
 This project doesn't count with automated tests.
 
-## How to contribute and partipate
-Fork this repo and submit a PR for review and potential merge to main branch
+## How to contribute and participate
+Fork this repo and submit a PR for review and potential merge to main branch.
 
 
 ## Authors
@@ -44,4 +44,4 @@ Fork this repo and submit a PR for review and potential merge to main branch
 
 - email me at viridiana.cruz.olivera@gmail.com
 
-- Linkedin [@viricruz](https://www.linkedin.com/in/viricruz/)
+- LinkedIn [@viricruz](https://www.linkedin.com/in/viricruz/)
